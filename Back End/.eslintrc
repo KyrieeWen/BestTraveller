@@ -1,0 +1,28 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    // Does not enforce camelcase style for property names
+    "camelcase": ["off"],
+    "max-len": ["error", { "code": 200 }],
+    "prefer-destructuring": ["off"],
+    "func-names": ["off"],
+    "no-plusplus": ["off"],
+    "prefer-promise-reject-errors": ["off"],
+    "react/jsx-filename-extension": ["off"],
+    "react/prop-types": ["warn"],
+    "no-return-assign": ["off"],
+    "no-console": 2,
+    "consistent-return": ["off"],
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }]
+  }
+}
